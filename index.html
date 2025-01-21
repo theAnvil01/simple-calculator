@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+</head>
+<style>
+    .heading{
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+    font-size: 29px;
+    letter-spacing: -1.2px;
+    word-spacing: -0.2px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: normal;
+    text-transform: none;
+    }
+    
+    .input{
+        text-align: center;
+       
+        
+    }
+    .input1{
+        margin-right: 10px;
+    padding: 6px;
+     font-size: 18px;
+     border-width: 2px;
+     border-color: #CCCCCC;
+     background-color: #f4e8e8;
+     color: #000000;
+     border-style: groove;
+     border-radius: 9px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+    .input2{
+    padding: 6px;
+     font-size: 18px;
+     border-width: 2px;
+     border-color: #CCCCCC;
+     background-color: #f4e8e8;
+     color: #000000;
+     border-style: groove;
+     border-radius: 9px;
+     box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+     text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+}
+/* From Uiverse.io by Web-Potato */ 
+button {
+ margin-top: 5px;
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+button span:hover {
+  transition: all 0.2s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+  transition: all 0.5s;
+}
+
+
+    .button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; 
+    juerstify-content: cent; 
+    align-items: center;
+    margin: auto; 
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+
+</style>
+<body>
+
+   
+    <h1 class="heading"> welcome to my Calculator app.</h1> 
+    <div class="input">
+    <input class="input1" type="number" id="number1" placeholder="Number1">
+    <input class="input2" type="number" id="number2" placeholder="Number2 ">
+    </div>
+    <div class="button-container">
+        <button class="button" onclick="add()""><span>Add</span></button>
+        <button class="button" onclick="subtract()"><span>Subtract</span></button>
+        <button class="button" onclick="multiply()"><span>Multiply</span></button>
+        <button class="button" onclick="divide()"><span>Divide</span></button> 
+    </div>
+    
+    <h4>the result is <span id="result"></span></h4>
+    <script src="script.js"></script>    
+    
+</body>
+</html>
